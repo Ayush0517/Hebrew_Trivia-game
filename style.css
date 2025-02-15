@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5e17eb; /* צבע הכותרת */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* עיצוב התמונה */
+.quiz-image {
+    width: 150px; /* גודל התמונה */
+    height: 150px; /* שמירה על יחס רוחב-גובה */
+    margin-left: 20px; /* ריווח מהכותרת */
+}
+
+/* עיצוב הכפתורים */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #5271ff; /* צבע הסגול */
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #4a0fc1;
+}
+
+
+/* עיצוב הציון */
+#score {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #5271ff; /* צבע כחול */
+    font-weight: bold;
+}
+
+/* עיצוב כפתור האתחול */
+.restart-btn {
+    background-color: #5e17eb; 
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.restart-btn:hover {
+    background-color: #5e17eb;
+}

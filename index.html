@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="title">
+            <img src="quiz.png" alt="Trivia Game" class="quiz-image">
+            Trivia Game for the Presentation
+        </h1>
+        
+        <div id="question-container">
+            <p id="question">שאלה תצא כאן...</p>
+            <button class="answer-btn" onclick="checkAnswer(0)">תשובה 1</button>
+            <button class="answer-btn" onclick="checkAnswer(1)">תשובה 2</button>
+            <button class="answer-btn" onclick="checkAnswer(2)">תשובה 3</button>
+            <button class="answer-btn" onclick="checkAnswer(3)">תשובה 4</button>
+            <button class="answer-btn" onclick="checkAnswer(4)">תשובה 5</button>
+        </div>
+        
+        <div id="question-progress-container">
+            <div id="question-navigation"></div>
+        </div>
+
+        <p id="score">Score: 0</p>
+
+        <p id="question-info">שאלה 1 מתוך 13</p>
+
+        <!-- הוספת אלמנט עבור הזיקוקים -->
+        <div id="fireworks-container" style="text-align: center; display: none;"></div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
