@@ -86,22 +86,22 @@ function updateQuestionNavigation() {
 }
 
 function endGame() {
-    let fireworksContainer = document.getElementById("fireworks-container");
+    let FireworksContainer = document.getElementById("Fireworks-container");
     let questionContainer = document.getElementById("question-container");
 
     // אם כל השאלות נענו נכון (כל השאלות נענו והציון נכון)
     if (answeredQuestions.size === questions.length && score === questions.length * 10) {
-        fireworksContainer.innerHTML = `
-            <img src="fireworks.gif" alt="Fireworks" class="fireworks-icon">
+        FireworksContainer.innerHTML = `
+            <img src="Fireworks.gif" alt="Fireworks" class="Fireworks-icon">
         `;
-        fireworksContainer.style.display = "flex"; // מציג את הזיקוקים
+        FireworksContainer.style.display = "flex"; // מציג את הזיקוקים
         questionContainer.innerHTML = `
             <h2>Game Over</h2>
             <button onclick="restartGame()" class="restart-btn">Restart</button>
         `;
     } else {
         // אם לא כל השאלות נענו נכון, לא להציג זיקוקים
-        fireworksContainer.style.display = "none";  // נסתר את הזיקוקים
+        FireworksContainer.style.display = "none";  // נסתר את הזיקוקים
         questionContainer.innerHTML = `
             <h2>Game Over</h2>
             <button onclick="restartGame()" class="restart-btn">Restart</button>
@@ -124,8 +124,8 @@ function restartGame() {
     `;
 
     // להסתיר את ה-GIF של הזיקוקים כשהמשחק מאתחל מחדש
-    let fireworksContainer = document.getElementById("fireworks-container");
-    fireworksContainer.style.display = "none";  // הסתרת הזיקוקים
+    let FireworksContainer = document.getElementById("Fireworks-container");
+    FireworksContainer.style.display = "none";  // הסתרת הזיקוקים
 
     loadQuestion();
 }
